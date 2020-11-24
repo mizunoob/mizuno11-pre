@@ -1,0 +1,49 @@
+.menu {
+  width: 100%;
+  background-color: #fff;
+}
+
+.menu-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include sp {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  width: 25%;
+  font-size: 1.6rem;
+  img {
+    width: 100%;
+  }
+  h2 {
+   font-size: 3rem;
+   text-align: center;
+   margin-top: 37px;
+  }
+  p {
+    margin: 34px 10px;
+  }
+  @include tab {
+    width: 32%;
+  }
+  @include sp {
+    width: 100%;
+    h2 {
+      text-align: left;
+      margin-top: 37px;
+     }
+     p {
+       margin: 34px 0px;
+     }
+  }
+}
+
+.menu-price {
+  margin: 0;
+  text-align: right;
+  margin-right: 10px;
+}

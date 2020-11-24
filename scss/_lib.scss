@@ -1,0 +1,52 @@
+/////mixin/////
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;    
+  }
+}
+@mixin tab {
+  @media screen and (max-width:959px) {
+    @content;
+  }  
+}
+@mixin sp {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+/////common/////
+html {
+  font-size: 62.5%; //10px
+}
+
+body {
+  font-size: 12px;
+  line-height: 1.67em;
+}
+
+.inner {
+  width: 100%;
+  padding: 256px 100px 0;
+  @include tab {
+    padding: 256px 50px 0;
+  }
+  @include sp {
+    padding: 60px 20px 0;
+  }
+}
+
+.title {
+  display: flex;
+  font-size: 1.8rem;
+  color: #707070;
+  letter-spacing: 0.54rem;
+  &:after {
+    display: block;
+    content: "";
+    width: 100px;
+    border: 1px solid #707070;
+    height: 0;
+    margin: auto 22px;
+  }
+}
