@@ -1,6 +1,9 @@
 .concept {
   width: 100%;
   height: 967px;
+  @include sp {
+    height: 700px;
+  }
 }
 
 .cp-title {

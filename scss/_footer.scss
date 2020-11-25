@@ -31,9 +31,13 @@ footer {
     margin-right: 26px;
     font-size: 3.2rem;
     color: #7070704D;
+    @include sp {
+      font-size: 1.8rem;
+    }
   }
   .sns-logo {
     display: flex;
+    font-size: 2rem;
     p {
       &:first-of-type {
         margin-right: 9px;
