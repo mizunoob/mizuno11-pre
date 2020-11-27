@@ -114,6 +114,9 @@ body {
   height: 0;
   margin: auto 22px; }
 @media screen and (max-width: 600px) {
+  .title:after {
+    width: 45px; } }
+@media screen and (max-width: 600px) {
   .title {
     margin-bottom: 50px; } }
 
@@ -133,13 +136,18 @@ header {
 @media screen and (max-width: 600px) {
   header {
     position: relative;
-    padding: 24px 21px; } }
+    padding: 24px 21px;
+    height: 10vh; } }
+header #open.hide {
+  display: none; }
 
 header h1 {
-  font-size: 3.8rem; }
+  font-size: 3.8rem;
+  letter-spacing: 3.8px; }
 @media screen and (max-width: 600px) {
   header h1 {
-    font-size: 2.2rem; } }
+    font-size: 2.2rem;
+    letter-spacing: 2.2px; } }
 
 .pc_hd-menu {
   width: 30%;
@@ -170,7 +178,8 @@ header h1 {
     margin-right: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    cursor: pointer; }
   .ham span {
     display: inline-block;
     width: 100%;
@@ -184,17 +193,69 @@ header h1 {
   .ham span {
     background-color: black; } }
 
+.overlay {
+  font-size: 2.4rem;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(161, 147, 134, 0.9);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  z-index: 15; }
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 3.2rem;
+  cursor: pointer; }
+.overlay ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+.overlay li {
+  margin-top: 30px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .4s, transform .4s; }
+.overlay li:hover {
+  color: #00000038; }
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto; }
+.overlay.show li {
+  opacity: 1;
+  transform: none; }
+.overlay.show li:nth-child(1) {
+  transition-delay: .2s; }
+.overlay.show li:nth-child(2) {
+  transition-delay: .4s; }
+.overlay.show li:nth-child(3) {
+  transition-delay: .6s; }
+.overlay.show li:nth-child(4) {
+  transition-delay: .8s; }
+
 .first-view {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row; }
+@media screen and (max-width: 600px) {
+  .first-view {
+    height: 90vh; } }
 
 .fv-left {
   width: 46%;
-  position: relative; }
+  position: relative;
+  letter-spacing: 3.8px; }
 .fv-left .fv-wrap {
-  width: 66%;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -206,6 +267,9 @@ header h1 {
 @media screen and (max-width: 959px) {
   .fv-left .fv-wrap {
     flex-direction: column-reverse; } }
+@media screen and (max-width: 600px) {
+  .fv-left .fv-wrap {
+    width: 80%; } }
 .fv-left .fv-wrap h2 {
   text-align: center; }
 .fv-left .fv-wrap h2:first-child {
@@ -219,9 +283,11 @@ header h1 {
     font: normal normal normal 2.5rem/128px Zapfino; } }
 @media screen and (max-width: 600px) {
   .fv-left .fv-wrap h2:first-child {
-    font: normal normal normal 2.3rem/65px Hiragino Mincho Pro; }
+    font: normal normal normal 2.3rem/65px Hiragino Mincho Pro;
+    letter-spacing: 2.3px; }
   .fv-left .fv-wrap h2:nth-child(2) {
-    font: normal normal normal 2.8rem/128px Zapfino; } }
+    font: normal normal normal 2.8rem/128px Zapfino;
+    letter-spacing: 2.8px; } }
 @media screen and (max-width: 600px) {
   .fv-left {
     width: 100%;
@@ -277,10 +343,13 @@ header h1 {
   font: normal normal normal 4rem/6.8rem Hiragino Mincho Pro; }
 .cp-contents p {
   width: 46%;
+  letter-spacing: 1.6px;
   font: normal normal normal 1.6rem/2.7rem Hiragino Kaku Gothic Pro; }
 @media screen and (max-width: 959px) {
   .cp-contents {
-    width: 95%; } }
+    width: 95%; }
+  .cp-contents h2 {
+    font-size: 3.2rem; } }
 @media screen and (max-width: 600px) {
   .cp-contents {
     flex-direction: column;
@@ -311,7 +380,9 @@ header h1 {
     min-width: 0;
     justify-content: space-between; }
   .cp-img img {
-    object-fit: cover; }
+    object-fit: cover;
+    object-position: 90% 100%;
+    height: 30vh; }
   .cp-img img:first-child {
     width: 49%; }
   .cp-img img:nth-child(2) {
@@ -336,11 +407,13 @@ header h1 {
 .menu-item img {
   width: 100%; }
 .menu-item h2 {
-  font-size: 3rem;
+  font: normal normal normal 3rem/3.6rem Roboto Mono for Powerline;
+  letter-spacing: 3px;
   text-align: center;
   margin-top: 37px; }
 .menu-item .menu-text {
-  margin: 34px 10px; }
+  margin: 34px 10px;
+  letter-spacing: 1.6px; }
 @media screen and (max-width: 959px) {
   .menu-item {
     width: 32%; } }
@@ -361,6 +434,7 @@ header h1 {
     margin: 30px 0; } }
 
 .menu-price {
+  letter-spacing: 1.6px;
   text-align: right;
   margin-right: 10px;
   margin-bottom: 70px; }
@@ -410,13 +484,15 @@ header h1 {
   justify-content: space-between;
   flex-direction: column; }
 .ac-text h3 {
-  font-size: 2.4rem;
+  font: normal normal bold 2.4rem/2.9rem Roboto Mono for Powerline;
   color: #00000038;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  letter-spacing: 2.4px; }
 .ac-text :not(:last-child) {
   margin-bottom: 24px; }
 .ac-text p {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  letter-spacing: 1.6px; }
 @media screen and (max-width: 600px) {
   .ac-text {
     width: 100%;
@@ -447,14 +523,16 @@ footer .inner {
     padding-bottom: 20px; } }
 
 .ft-title {
-  display: flex; }
+  display: flex;
+  letter-spacing: 3.2px; }
 .ft-title h2 {
   margin-right: 26px;
   font-size: 3.2rem;
   color: #7070704D; }
 @media screen and (max-width: 600px) {
   .ft-title h2 {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem;
+    letter-spacing: 1.8px; } }
 .ft-title .sns-logo {
   display: flex;
   font-size: 2rem; }
@@ -473,7 +551,8 @@ footer .inner {
   font-size: 1.8rem;
   color: #707070; }
 .ft-btn p {
-  margin: 10px 41px; }
+  margin: 10px 41px;
+  letter-spacing: 1.8px; }
 @media screen and (max-width: 959px) {
   .ft-btn {
     width: 184px;

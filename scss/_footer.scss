@@ -27,12 +27,14 @@ footer {
 
 .ft-title {
   display: flex;
+  letter-spacing: 3.2px;
   h2 {
     margin-right: 26px;
     font-size: 3.2rem;
     color: #7070704D;
     @include sp {
       font-size: 1.8rem;
+      letter-spacing: 1.8px;
     }
   }
   .sns-logo {
@@ -59,6 +61,7 @@ footer {
   color: #707070;
   p {
     margin: 10px 41px;
+    letter-spacing: 1.8px;
   }
   @include tab {
     width: 184px;

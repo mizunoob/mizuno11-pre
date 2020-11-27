@@ -20,16 +20,18 @@
     width: 100%;
   }
   h2 {
-   font-size: 3rem;
-   text-align: center;
-   margin-top: 37px;
+    font: normal normal normal 3rem/3.6rem Roboto Mono for Powerline;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 37px;
   }
   .menu-text {
     margin: 34px 10px;
+    letter-spacing: 1.6px;
   }
   @include tab {
     width: 32%;
-  }
+    }
   @include sp {
     width: 100%;
     h2 {
@@ -49,6 +51,7 @@
 }
 
 .menu-price {
+  letter-spacing: 1.6px;
   text-align: right;
   margin-right: 10px;
   margin-bottom: 70px;

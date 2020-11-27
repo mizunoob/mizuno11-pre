@@ -44,15 +44,17 @@
   justify-content: space-between;
   flex-direction: column;
   h3 {
-   font-size: 2.4rem;
-   color: #00000038;
-   margin-bottom: 30px;
+    font: normal normal bold 2.4rem/2.9rem Roboto Mono for Powerline;
+    color: #00000038;
+    margin-bottom: 30px;
+    letter-spacing: 2.4px;
   } 
   :not(:last-child) {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
   }
   p {
     color: #FFFFFF;
+    letter-spacing: 1.6px;
   }
   @include sp {
     width: 100%;

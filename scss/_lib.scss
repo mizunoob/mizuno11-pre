@@ -49,6 +49,9 @@ body {
     border: 1px solid #707070;
     height: 0;
     margin: auto 22px;
+    @include sp {
+      width: 45px;
+    }
   }
   @include sp {
     margin-bottom: 50px;

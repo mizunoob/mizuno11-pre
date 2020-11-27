@@ -3,13 +3,17 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
+  @include sp {
+    height: 90vh;
+  }
 }
 
 .fv-left {
   width: 46%;
   position: relative;
+  letter-spacing: 3.8px;
   .fv-wrap {
-    width: 66%;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,6 +24,9 @@
     height: 65px + 128px + 48px;
     @include tab {
       flex-direction: column-reverse;
+    }
+    @include sp {
+      width: 80%;
     }
     h2 {
       text-align: center;
@@ -40,9 +47,11 @@
       @include sp {
         &:first-child {
           font: normal normal normal 2.3rem/65px Hiragino Mincho Pro;
+          letter-spacing: 2.3px;
           }
         &:nth-child(2) {
           font: normal normal normal 2.8rem/128px Zapfino;
+          letter-spacing: 2.8px;
           }
       }
       }
