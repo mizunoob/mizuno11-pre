@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/34ab07c471.js" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
+  <script>
+$('#ham-menu a[href]').on('click', function(event) {
+  $('#close').trigger('click');
+});
+  </script>
   <title>事前課題</title>
 </head>
 <body>
@@ -17,10 +26,10 @@
     </div>
     <nav class="pc_hd-menu">
       <ul>
-        <li>MENU</li>
-        <li>CONCEPT</li>
-        <li>ACCESS</li>
-        <li>RESERVE</li>
+        <li><a href="#mn-jump">MENU</a></li>
+        <li><a href="#cp-jump">CONCEPT</a></li>
+        <li><a href="#ac-jump">ACCESS</a></li>
+        <li><a href="#rs-jump">RESERVE</a></li>
       </ul>
     </nav>
   </header>
@@ -28,11 +37,11 @@
   <div class="overlay">
     <i class="fas fa-times" id="close"></i>
     <nav>
-      <ul>
-        <li><a href="#">MENU</a></li>
-        <li><a href="#">CONCEPT</a></li>
-        <li><a href="#">ACCESS</a></li>
-        <li><a href="#">RESERVE</a></li>
+      <ul id="ham-menu">
+        <li><a href="#mn-jump" id="mn-close">MENU</a></li>
+        <li><a href="#cp-jump" id="cp-close">CONCEPT</a></li>
+        <li><a href="#ac-jump" id="ac-close">ACCESS</a></li>
+        <li><a href="#rs-jump" id="rs-close">RESERVE</a></li>
       </ul>
     </nav>
   </div>
@@ -50,7 +59,7 @@
 <section class="concept">
   <div class="cp-title">
     <div class="inner">
-      <h3 class="title">CONCEPT</h3>
+      <h3 class="title"><a name="cp-jump">CONCEPT</a></h3>
       <div class="cp-img">
         <img src="img/cp1.png" alt="">
         <img src="img/cp2.png" alt="">
@@ -72,32 +81,38 @@
   </section>
 <section class="menu">
   <div class="inner">
-    <h3 class="title">MENU</h3>
+    <h3 class="title"><a name="mn-jump">MENU</a></h3>
     <div class="menu-wrap">
       <div class="menu-item">
         <img src="img/menu1.png" alt="">
-        <h2>Design Cut</h2>
-        <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
-        <p class="menu-price">¥9,800(税抜)</p>
+        <div class="text-inner">
+          <h2>Design Cut</h2>
+          <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+        </div>
+          <p class="menu-price">¥9,800(税抜)</p>
       </div>
       <div class="menu-item">
         <img src="img/menu2.png" alt="">
-        <h2>Design Perm</h2>
-        <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
-        <p class="menu-price">¥19,800~(税抜)</p>
+        <div class="text-inner">
+          <h2>Design Perm</h2>
+          <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+        </div>
+          <p class="menu-price">¥19,800~(税抜)</p>
       </div>
       <div class="menu-item">
         <img src="img/menu3.png" alt="">
-        <h2>Make Up</h2>
-        <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
-        <p class="menu-price">¥8,800~(税抜)</p>
+        <div class="text-inner">
+          <h2>Make Up</h2>
+          <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+        </div>
+          <p class="menu-price">¥8,800~(税抜)</p>
       </div>
     </div>
   </div>
 </section>
 <section class="access">
   <div class="inner">
-    <h3 class="title">ACCESS</h3>
+    <h3 class="title"><a name="ac-jump">ACCESS</a></h3>
   </div>
     <div class="ac-wrap">
       <div class="inner">
@@ -129,7 +144,7 @@
           </div>
         </div>
         <div class="ft-btn">
-          <p>RESERVE</p>
+          <p><a name="rs-jump">RESERVE</a></p>
         </div>
       </div>
     </div>

@@ -100,7 +100,7 @@ header h1 {
   pointer-events: none;
   transition: opacity .6s;
   z-index: 15;
-  #close {
+  .fa-times {
     position: absolute;
     top: 16px;
     right: 16px;
