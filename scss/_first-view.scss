@@ -26,8 +26,8 @@
       flex-direction: column-reverse;
     }
     @include sp {
-      width: 80%;
-      height: 18vh;
+      width: 100%;
+      height: 15vh;
     }
     h2 {
       text-align: center;
@@ -47,12 +47,12 @@
       }
       @include sp {
         &:first-child {
-          font: normal normal normal 2.3rem/65px Hiragino Mincho Pro;
-          letter-spacing: 2.3px;
+          font: normal normal normal 6.2vw/65px Hiragino Mincho Pro;
+          letter-spacing: 0.23rem;
           }
         &:nth-child(2) {
-          font: normal normal normal 2.8rem/128px Zapfino;
-          letter-spacing: 2.8px;
+          font: normal normal normal 7.5vw/128px Zapfino;
+          letter-spacing: 0.28rem;
           }
       }
       }
