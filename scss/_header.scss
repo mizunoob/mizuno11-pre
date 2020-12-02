@@ -41,6 +41,10 @@ header h1 {
       &:not(:first-child) {
         color: #707070;
       }
+      &:hover {
+        color: white;
+        text-shadow: -1px -1px 5px #000000;
+      }
     }
   }
   &:after {
