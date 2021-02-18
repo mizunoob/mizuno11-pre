@@ -39,14 +39,14 @@ body {
 .title {
   display: flex;
   font-size: 1.8rem;
-  color: #707070;
+  color: steelblue;
   letter-spacing: 0.54rem;
   margin-bottom: 10px;
   &:after {
     display: block;
     content: "";
     width: 100px;
-    border: 1px solid #707070;
+    border: 1px solid steelblue;
     height: 0;
     margin: auto 22px;
     @include sp {

@@ -1,4 +1,4 @@
-.concept {
+.about {
   width: 100%;
   min-height: 967px;
   @include tab {
@@ -9,26 +9,26 @@
   }
 }
 
-.cp-title {
+.ab-title {
   width: 100%;
   height: 407px;
-  background-color:#A193861F;
+  background-color: lightsteelblue;
   @include sp {
     height: 176px;
   }
 }
 
-.cp-wrap {
+.ab-wrap {
   width: 100%;
   height: 48vw;
   min-height: 560px;
-  background-color: #A1938689;
+  background-color: steelblue;
   @include sp {
-    min-height: 590px;
+    min-height: 670px;
   }
 }
 
-.cp-contents {
+.ab-contents {
   width: 86%;
   color: #ffffff;
   padding-top: 69px;
@@ -37,14 +37,24 @@
   justify-content: space-between;
   h2 {
     padding-top: 18px;
-    width: 48%;
+    width: 40%;
     letter-spacing: 16px;
     font: normal normal normal 4rem/6.8rem Hiragino Mincho Pro;
   }
-  p {
-    width: 46%;
+  ul {
+    width: 60%;
+    @include sp {
+      width: 100%;
+    }
+  }
+  li {
+    list-style: circle;
+    width: 100%;
     letter-spacing: 1.6px;
     font: normal normal normal 1.6rem/2.7rem Hiragino Kaku Gothic Pro;
+    @include tab {
+      letter-spacing: 0.8px;
+    }
   }
   @include tab {
     width: 95%;
@@ -62,7 +72,7 @@
       letter-spacing: 0.72rem;
       font: normal normal normal 1.8rem/2.9rem Hiragino Mincho Pro;
     }
-    p {
+    li {
       padding-top: 18px;
       width: 100%;
       font: normal normal normal 1.6rem/2.7rem Hiragino Kaku Gothic Pro;
@@ -71,7 +81,7 @@
 }
 
 
-.cp-img {
+.ab-img {
   width: 100%;
   display: flex;
   min-width: 800px;
@@ -79,9 +89,14 @@
     &:first-child {
       width: 62%;
       margin-right: 11px;
+      object-fit: cover;
+      height: 300px;
     }
     &:nth-child(2) {
       width: 36%;
+      height: 300px;
+      object-fit: cover;
+      object-position: 45% 45%;
     }
   }
   @include tab {
@@ -91,16 +106,16 @@
       object-fit: cover;
       height: 30vh;
       &:first-child {
-        object-position: 90% 100%;
+        object-position: 90% 50%;
         width: 49%;
       }
       &:nth-child(2) {
-        object-position: 90% 10%;
+        object-position: 45% 45%;
         width: 49%;
       }
       @include sp {
         &:nth-child(2) {
-          object-position: 90% 100%;
+          object-position: 45% 45%;
         }
       }
     } 

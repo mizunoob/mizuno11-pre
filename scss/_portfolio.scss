@@ -1,13 +1,13 @@
-.menu {
+.portfolio {
   width: 100%;
-  background-color: #fff;
+  background-color: lightsteelblue;
   margin-top: 100px;
   @include sp {
     margin-top: 50px;
   }
 }
 
-.menu-wrap {
+.pf-wrap {
   width: 100%;
   height: 100%;
   display: flex;
@@ -17,19 +17,26 @@
   }
 }
 
-.menu-item {
+.pf-item {
   width: 25%;
   font-size: 1.6rem;
   img {
     width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    object-position: 50% 0%;
+    @include sp {
+      height: 75vw;
+      margin: 0 auto;
+    }
   }
   h2 {
-    font: normal normal normal 3rem/3.6rem Roboto Mono for Powerline;
+    font: normal normal normal 2rem/2.4rem Roboto Mono for Powerline;
     letter-spacing: 3px;
     text-align: center;
     margin-top: 37px;
   }
-  .menu-text {
+  .pf-text {
     margin: 34px 10px;
     letter-spacing: 1.6px;
   }
@@ -45,21 +52,44 @@
         margin-top: 30px;
       }
      }
-    .menu-text {
+    .pf-text {
        margin: 34px 0;
        @include sp {
          margin: 30px 0;
        }
      }
   }
+  .dammy {
+    object-fit: contain;
+    object-position: 0% 50%;
+  }
 }
 
 .text-inner {
   padding-left: 13px;
   padding-right: 24px;
+  h3 {
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  ul {
+    margin-left: 4rem;
+    margin-bottom: 1.6rem;
+  }
+  li {
+    list-style: circle inside;
+  }
+  .comingsoon {
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
 }
 
-.menu-price {
+.pf-made {
   letter-spacing: 1.6px;
   text-align: right;
   margin-bottom: 70px;

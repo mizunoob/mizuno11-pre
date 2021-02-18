@@ -4,21 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/34ab07c471.js" crossorigin="anonymous"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
-  <script>
-$('#ham-menu a[href]').on('click', function(event) {
-  $('#close').trigger('click');
-});
-  </script>
-  <title>事前課題</title>
+  <title>K.Mizuno's Portfolio</title>
 </head>
 <body>
   <header>
-    <h1 class="hd-title">SALON BEPPU</h1>
+    <h1 class="hd-title">K.Mizuno's Portfolio</h1>
     <div class="ham" id="open">
       <span></span>
       <span></span>
@@ -26,10 +17,10 @@ $('#ham-menu a[href]').on('click', function(event) {
     </div>
     <nav class="pc_hd-menu">
       <ul>
-        <li><a href="#mn-jump">MENU</a></li>
-        <li><a href="#cp-jump">CONCEPT</a></li>
-        <li><a href="#ac-jump">ACCESS</a></li>
-        <li><a href="#rs-jump">RESERVE</a></li>
+        <li><a href="#ab-jump">ABOUT</a></li>
+        <li><a href="#pf-jump">PORTFOLIO</a></li>
+        <li><a href="#sk-jump">SKILL</a></li>
+        <li><a href="#ct-jump">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -38,10 +29,10 @@ $('#ham-menu a[href]').on('click', function(event) {
     <i class="fas fa-times" id="close"></i>
     <nav>
       <ul id="ham-menu">
-        <li><a href="#mn-jump" id="mn-close">MENU</a></li>
-        <li><a href="#cp-jump" id="cp-close">CONCEPT</a></li>
-        <li><a href="#ac-jump" id="ac-close">ACCESS</a></li>
-        <li><a href="#rs-jump" id="rs-close">RESERVE</a></li>
+        <li><a href="#ab-jump" id="ab-close">ABOUT</a></li>
+        <li><a href="#pf-jump" id="pf-close">PORTFOLIO</a></li>
+        <li><a href="#sk-jump" id="sk-close">SKILL</a></li>
+        <li><a href="#ct-jump" id="ct-close">CONTACT</a></li>
       </ul>
     </nav>
   </div>
@@ -50,101 +41,164 @@ $('#ham-menu a[href]').on('click', function(event) {
 <section class="first-view">
   <div class="fv-left">
     <div class="fv-wrap">
-      <h2>髪は、大事です。</h2>
-      <h2>We need Hair.</h2>
+      <h2>エンジニアを志す元薬学生</h2>
+      <h2>FrontEndDeveloper</h2>
     </div>
   </div>
   <div class="fv-right"></div>
 </section>
-<section class="concept">
-  <div class="cp-title">
+<section class="about">
+  <div class="ab-title">
     <div class="inner">
-      <h3 class="title"><a name="cp-jump">CONCEPT</a></h3>
-      <div class="cp-img">
-        <img src="img/cp1.png" alt="">
-        <img src="img/cp2.png" alt="">
+      <h3 class="title"><a name="ab-jump">ABOUT</a></h3>
+      <div class="ab-img">
+        <img src="img/profile2.JPG" alt="">
+        <img src="img/profile3.JPG" alt="">
       </div>
-      <div class="cp-contents">
-        <h2>髪は、大事です。</h2>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+      <div class="ab-contents">
+        <h2>自己紹介</h2>
+        <ul>
+          <li>名前：水野康平</li>
+          <li>年齢：24歳</li>
+          <li>出身：神奈川県</li>
+          <li>最終学歴：星薬科大学大学院
+            薬学研究科
+          </li>
+          <li>活動：大学院時代は関節炎治療DDSの研究に取り組み、その後製薬メーカーにて後発医薬品の製剤開発業務を１年間経験</li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="cp-wrap">
-    <!-- <div class="inner">
-      <div class="cp-contents"> -->
-        <!-- <h2>髪は、大事です。</h2>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p> -->
-      <!-- </div>
-    </div> -->
+  <div class="ab-wrap">
+
   </div>
   </section>
-<section class="menu">
+
+  <!--スキル-->
+  <section class="skill"> 
+    <div class="inner">
+      <h3 class="title"><a name="sk-jump">SKILL</a></h3>
+      <div class="sk-wrap">
+        <div class="sk-item">
+          <img src="img/html.png" alt="">
+          <div class="text-inner">
+            <h2>HTML</h2>
+          </div>
+        </div>
+        <div class="sk-item">
+          <img src="img/css.png" alt="">
+          <div class="text-inner">
+            <h2>CSS</h2>
+          </div>
+        </div>
+        <div class="sk-item">
+          <img class="sass-logo" src="img/sass.png" alt="">
+          <div class="text-inner">
+            <h2>Sass</h2>
+          </div>
+        </div>
+      </div>
+      <div class="sk-wrap">
+        <div class="sk-item">
+          <img src="img/javascript.png" alt="">
+          <div class="text-inner">
+            <h2>JavaScript</h2>
+          </div>
+        </div>
+        <div class="sk-item">
+          <img class="react-logo" src="img/react.png" alt="">
+          <div class="text-inner">
+            <h2>React.js</h2>
+          </div>
+        </div>
+        <div class="sk-item">
+          <img src="img/firebase.png" alt="">
+          <div class="text-inner">
+            <h2>Firebase</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--制作物-->
+<section class="portfolio">
   <div class="inner">
-    <h3 class="title"><a name="mn-jump">MENU</a></h3>
-    <div class="menu-wrap">
-      <div class="menu-item">
-        <img src="img/menu1.png" alt="">
-        <div class="text-inner">
-          <h2>Design Cut</h2>
-          <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+    <h3 class="title"><a name="pf-jump">PORTFOLIO</a></h3>
+    <div class="pf-wrap">
+      <div class="pf-item">
+        <a href="https://mizunoob.github.io/JS-Timetable/">
+          <img src="img/timetable.png" alt="時間割作成アプリ">
+          <div class="text-inner">
+            <h2>時間割作成アプリ</h2>
+        </a>
+          <h3>使用技術</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
         </div>
-          <p class="menu-price">¥9,800(税抜)</p>
+        <p class="pf-made">2020/12 制作</p>
       </div>
-      <div class="menu-item">
-        <img src="img/menu2.png" alt="">
-        <div class="text-inner">
-          <h2>Design Perm</h2>
-          <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+      <div class="pf-item">
+        <a href="https://task-manegementapp.web.app/">
+          <img src="img/task.png" alt="タスク管理アプリ">
+          <div class="text-inner">
+            <h2>タスク管理アプリ</h2>
+        </a>
+          <h3>使用技術</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Sass</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>Firebase</li>
+          </ul>
         </div>
-          <p class="menu-price">¥19,800~(税抜)</p>
+        <p class="pf-made">2021/02 制作</p>
       </div>
-      <div class="menu-item">
-        <img src="img/menu3.png" alt="">
-        <div class="text-inner">
-          <h2>Make Up</h2>
-          <p class="menu-text">テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。テキストテキストテキスト。</p>
+      <div class="pf-item">
+        <a>
+          <img class="dammy" src="img/dammy.png" alt="">
+          <div class="text-inner">
+            <h2>チャットアプリ</h2>
+        </a>
+          <p class="comingsoon">(近日公開予定)</p>
+          <!-- <h3>使用技術</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>Firebase</li>
+          </ul> -->
         </div>
-          <p class="menu-price">¥8,800~(税抜)</p>
       </div>
     </div>
   </div>
 </section>
-<section class="access">
-  <div class="inner">
-    <h3 class="title"><a name="ac-jump">ACCESS</a></h3>
-  </div>
-    <div class="ac-wrap">
-      <div class="inner">
-        <div class="ac-text">
-          <h3>池袋東口店</h3>
-          <p>テキストテキストテキスト</p>
-          <p>000-0000-0000</p>
-            <p>営業時間 10:00~18:00</p>
-            <p>定休日 第一・第三月曜日</p>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10682.449045147247!2d139.70762651542907!3d35.728896645388595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2z5rGg6KKL6aeF!5e0!3m2!1sja!2sjp!4v1605785424717!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-    </div>
-    </section>
-  </main>
+</main>
 
   <footer>
     <div class="inner">
       <div class="ft-wrap">
         <div class="ft-title">
-          <h2>SALON BEPPU</h2>
+          <h2>K.Mizuno's Portfolio</h2>
           <div class="sns-logo">
             <p>
-              <i class="fab fa-twitter"></i>
+              <a href="https://twitter.com/kuh1_m"><i class="fab fa-twitter"></i></a>
             </p>
             <p>
-              <i class="fab fa-facebook-square"></i>
+              <a href="https://github.com/mizunoob"><i class="fab fa-github-square"></i></a>
             </p>
           </div>
         </div>
         <div class="ft-btn">
-          <p><a name="rs-jump">RESERVE</a></p>
+          <p><a name="ct-jump" href="https://docs.google.com/forms/d/e/1FAIpQLSdO6C4zuKxTs0060ng-FnRltdKpn57devz22p6dOeUwir5tTw/viewform?usp=sf_link">CONTACT</a></p>
         </div>
       </div>
     </div>

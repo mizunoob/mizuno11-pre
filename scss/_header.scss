@@ -75,7 +75,7 @@ header h1 {
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: #ffffff;
+    background-color: black;
     &:last-child {
       width: 60%;
     }
@@ -97,7 +97,7 @@ header h1 {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba($color: #A193861F, $alpha: 0.9);
+  background: rgba($color: steelblue, $alpha: 0.9);
   text-align: center;
   padding: 64px;
   opacity: 0;
@@ -121,8 +121,10 @@ header h1 {
     opacity: 0;
     transform: translateY(16px);
     transition: opacity .4s, transform .4s;
-    &:hover {
-      color: #00000038;
+    a {
+      &:hover {
+        color: #00000038;
+      }
     }
   }
 }

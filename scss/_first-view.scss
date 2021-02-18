@@ -32,17 +32,17 @@
     h2 {
       text-align: center;
       &:first-child {
-        font: normal normal normal 3.8rem/65px Hiragino Mincho Pro;
+        font: normal normal normal 3.3rem/65px Hiragino Mincho Pro;
         }
       &:nth-child(2) {
-        font: normal normal normal 3.8rem/128px Zapfino;
+        font: normal normal normal 3.5rem/128px Zapfino;
         }
       @include tab {
         &:first-child {
-          font: normal normal normal 2.5rem/65px Hiragino Mincho Pro;
+          font: normal normal normal 3.1vw/65px Hiragino Mincho Pro;
           }
         &:nth-child(2) {
-          font: normal normal normal 2.5rem/128px Zapfino;
+          font: normal normal normal 3.4vw/128px Zapfino;
           }
       }
       @include sp {
@@ -61,14 +61,16 @@
       width: 100%;
       color: white;
       text-shadow: 0px 3px 16px #000000;
-      background-image: url(../img/fv1.png);
+      background-image: url(../img/profile1.JPG);
       background-size: cover;
+      background-position: center center;
       }
   }
 
 .fv-right {
-  background-image: url(../img/fv1.png);
+  background-image: url(../img/profile1.JPG);
   background-size: cover;
+  background-position: center center;
   width: 54%;
   @include sp {
     display: none;
